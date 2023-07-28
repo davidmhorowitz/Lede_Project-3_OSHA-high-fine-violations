@@ -77,7 +77,7 @@ len(df.loc[((df["employers_fixed"] == 'Dollar Tree/Family Dollar (similar names 
 
 I decided that since Dollar Tree, Dollar General and Target are the top three private employers with the most high-fine OSHA violations *and* direct competitors, I would compare the three. Target could be a baseline that the dollar store companies could be compared to.
 
-I looked at Dollar Tree. It did not improve, despite high fines in 2022. In fact, I found that it is projected to do significantly *worse* this year. 
+I looked at Dollar Tree. It did not improve despite accruing a substantial increase in high fines in 2022. In fact, I found that it is projected to do significantly *worse* this year. 
 
 When I got to Dollar General’s number of high-fine penalties per year, I was like, “Holy shit”:
 
@@ -91,28 +91,28 @@ When I got to Dollar General’s number of high-fine penalties per year, I was l
 2022: 29
 2023: 48
 
-So, OSHA’s highest penalties *clearly* aren’t stopping the two greatest violators of workers’ health and safety laws in the U.S. 
+So, OSHA’s highest penalties *clearly* aren’t stopping the two greatest violators of workers’ health and safety laws in the U.S. That's the angle.
 
-Target, in comparison, seemed relatively stable. But to ensure it’s a fair comparison between the dollar store companies and Target, I had to look at each’s employee counts.
+Target, in comparison, seemed relatively stable. But I wanted a more sound argument: To ensure it’s a fair comparison between the dollar store companies and Target, I had to look at each’s employee counts.
 
-I got the annual 10-K reports filed with the SEC for each company, used “cmd+f” and typed in “full-” to quickly get the number of employees for each company each year since 2016.
+I retrieved the annual 10-K reports filed with the SEC for each company, used “cmd+f” and typed in “full-” to quickly get the number of employees for each company each year since 2016.
 
 I chose 2016 for two reasons: Dollar Tree did not have an SEC report before 2016, and Target still had stores in Canada in early 2015 (they closed before 2016).
 
-Dollar General appeared to not have stores outside of the U.S. Dollar Tree has stores, but they appear a tiny minority, so I used a multiplier. Here’s an explanation from my Jupyter Notebook file:
+Dollar General appeared to not have stores outside of the U.S. Dollar Tree has stores in Canada, but they appear a tiny minority, so I used a multiplier. Here’s an explanation of the multiplier from my Jupyter Notebook file:
 
 Scrapehero indicates that there are 233 Dollar Trees in Canada. (I can't find any indication online of
-Family Dollar existing in Canada.) Scrapehero seems very likely to be accurate because its count of
+Family Dollar — which was acquired by Dollar Tree — existing in Canada.) Scrapehero seems very likely to be overall accurate because its count of
 Dollar Trees and Family Dollars, in total, are very close to the figures in the company's 10-K reports:
 
 Scrapehero states: 8349 Family Dollars + 7927 U.S. Dollar Trees + 233 Canada Dollar Trees = 16509. 
 Dollar Tree in the SEC report counts 16340.
 
-#Assuming this is roughly accurate, we can say that Dollar Tree/Family Dollar's Canada stores make up
-#only 233 / 16509 of the company's locations, or 1.4%. 
+Assuming this is roughly accurate, we can say that Dollar Tree/Family Dollar's Canada stores make up
+only 233 / 16509 of the company's locations, or 1.4%. 
 
-It's not exact, but this is such a small figure that it negates the need for precision, and we can likely 
-extrapolate to figure out the number of employees in the U.S.
+It's not exact, but this is such a small figure that I felt it negated the need for exact precision, and we can likely 
+extrapolate to figure out the number of employees in the U.S. 
 This means that we’re going to multiply the number of employees by 0.986 . 
 Ideally, we would get Scrapehero's figures for Canada stores per year, but the figure is so relatively small
 that I think it's okay if, for this project, I use the 0.986 multiplier.
