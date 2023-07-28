@@ -101,21 +101,21 @@ I chose 2016 for two reasons: Dollar Tree did not have an SEC report before 2016
 
 Dollar General appeared to not have stores outside of the U.S. Dollar Tree has stores, but they appear a tiny minority, so I used a multiplier. Here’s an explanation from my Jupyter Notebook file:
 
-# Scrapehero indicates that there are 233 Dollar Trees in Canada. (I can't find any indication online of
-#Family Dollar existing in Canada.) Scrapehero seems very likely to be accurate because its count of
-#Dollar Trees and Family Dollars, in total, are very close to the figures in the company's 10-K reports:
+Scrapehero indicates that there are 233 Dollar Trees in Canada. (I can't find any indication online of
+Family Dollar existing in Canada.) Scrapehero seems very likely to be accurate because its count of
+Dollar Trees and Family Dollars, in total, are very close to the figures in the company's 10-K reports:
 
-# Scrapehero states: 8349 Family Dollars + 7927 U.S. Dollar Trees + 233 Canada Dollar Trees = 16509. 
-# Dollar Tree in the SEC report counts 16340.
+Scrapehero states: 8349 Family Dollars + 7927 U.S. Dollar Trees + 233 Canada Dollar Trees = 16509. 
+Dollar Tree in the SEC report counts 16340.
 
 #Assuming this is roughly accurate, we can say that Dollar Tree/Family Dollar's Canada stores make up
 #only 233 / 16509 of the company's locations, or 1.4%. 
 
-#It's not exact, but this is such a small figure that it negates the need for precision, and we can likely 
-#extrapolate to figure out the number of employees in the U.S.
-#This means that we’re going to multiply the number of employees by 0.986 . 
-#Ideally, we would get Scrapehero's figures for Canada stores per year, but the figure is so relatively small
-#that I think it's okay if, for this project, I use the 0.986 multiplier.
+It's not exact, but this is such a small figure that it negates the need for precision, and we can likely 
+extrapolate to figure out the number of employees in the U.S.
+This means that we’re going to multiply the number of employees by 0.986 . 
+Ideally, we would get Scrapehero's figures for Canada stores per year, but the figure is so relatively small
+that I think it's okay if, for this project, I use the 0.986 multiplier.
 
 Another possible weakness is that I didn’t account for the ratio of full-time employees to part-time employees; however, given that these businesses are direct competitors in the same industry, I figure that it’s okay, overall, to work with the total number of employees, especially given that it’s just the denominator to make my comparison among companies — “dollars owed per employee” — more accurate.
 
