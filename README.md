@@ -12,7 +12,7 @@ However, when I attempted a “get” request — with the plan to use Beautiful
 
 But I did find *one* undocumented API endpoint. It wasn’t as much as I wanted — and did not allow me to click into an individual high-fine penalty and isolate restaurants or retrieve data on whether an employer was unionized — but I pivoted and drew new conclusions.
 
-I wanted to know which employers are doing the worst and how bad has it gotten — and are these high-fine penalties actually improving the situation? I had to make a bar chart and a line chart (well, it ended up being a set of three line charts) to answer this.
+I wanted to know which employers are doing the worst and how bad has it gotten — and are these high-fine penalties actually improving the situation? I planned to make a bar chart and a line chart (well, it ended up being a set of three line charts) to answer this.
 
 Using “value_counts” in pandas quickly showed that Dollar Tree, the USPS and Dollar General topped the list, accruing the most high-penalty violations. 
 
